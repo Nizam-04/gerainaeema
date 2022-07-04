@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +25,7 @@ body.no-scroll {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.75);
+  z-index: 2;
 }
 
 nav .logo img {
@@ -54,7 +59,7 @@ nav .menu-toggle input {
   right: 11px;
   opacity: 0;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
 }
 nav .menu-toggle span {
   display: block;
@@ -63,7 +68,7 @@ nav .menu-toggle span {
   background-color: rgb(15, 23, 42);
   border-radius: 5px;
   transition: all 0.4s;
-  transition-delay: 0.4s;
+  z-index: 3;
 }
 nav .menu-toggle span:nth-child(2) {
   transform-origin: top left;
@@ -110,9 +115,9 @@ nav .menu-toggle input:checked ~ span:nth-child(4) {
     background-color: white;
     transform: translateX(100%);
     transition: all 0.4s;
-    transition-delay: 0.4s;
     margin-bottom: 0;
     opacity: 0;
+    z-index: 3;
   }
   nav ul li {
     padding-bottom: 10px;
@@ -123,5 +128,63 @@ nav .menu-toggle input:checked ~ span:nth-child(4) {
   }
   nav ul.slide li {
     padding-bottom: 10px;
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+.slider .myslider {
+  height: 655px;
+  display: none;
+  overflow: hidden;
+}
+.slider .prev, .slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.slider .prev:hover, .slider .next:hover {
+  color: rgb(15, 23, 42);
+}
+.slider .next {
+  right: 0;
+}
+.slider .dotsbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+.slider .dotsbox .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.slider .dotsbox .active {
+  background-color: #d1c286;
+}
+.slider .dotsbox .dot:hover {
+  background-color: #d1c286;
+}
+@media screen and (max-width: 800px) {
+  .slider .myslider {
+    height: 500px;
   }
 }/*# sourceMappingURL=style.css.map */
