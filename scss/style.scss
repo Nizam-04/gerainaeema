@@ -1,0 +1,161 @@
+// Variables
+$gerainaeema: #d1c286;
+$text-color: rgb(15, 23, 42);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.75);
+}
+
+// Navbar
+nav {
+
+  .logo img {
+    width: 150px;
+    height: 80px;
+  }
+
+  ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    li a {
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      color: $gerainaeema;
+    }
+
+    li .badge {
+      background-color: $gerainaeema;
+    }
+  }
+
+  // Hamburger Menu
+  .menu-toggle {
+    display: none;
+    height: 20px;
+
+    input {
+      position: absolute;
+      width: 40px;
+      height: 28px;
+      top: -3px;
+      right: 11px;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: $text-color;
+      border-radius: 5px;
+      transition: all 0.4s;
+      transition-delay: 0.4s;
+    }
+
+    // Hamburger Menu Animation
+    span:nth-child(2) {
+      transform-origin: top left;
+      height: 2.5px;
+    }
+    
+    span:nth-child(4) {
+      transform-origin: bottom left;
+    }
+
+    input:checked ~ span:nth-child(2) {
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+    input:checked ~ span:nth-child(3) {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    input:checked ~ span:nth-child(4) {
+      transform: rotate(-45deg) translate(-1px, 0);
+    }
+
+  }
+
+  // Responsive Breakpoint
+    // Ukuran Desktop
+    @media screen and (max-width: 992px) {
+      ul {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
+    // Ukuran Tablet
+    @media screen and (max-width: 768px) {
+      ul {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 50%;
+      }
+    }
+
+    // Ukuran Mobile
+    @media screen and (max-width: 576px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60%;
+        height: 100vh;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: white;
+        transform: translateX(100%);
+        transition: all 0.4s;
+        transition-delay: 0.4s;
+        margin-bottom: 0;
+        opacity: 0;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+
+      ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+        
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+}
