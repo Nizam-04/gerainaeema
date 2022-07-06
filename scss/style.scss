@@ -14,7 +14,6 @@ html {
 
 body {
   height: 2000px;
-  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
@@ -168,12 +167,16 @@ nav {
 // Slider
 .slider {
   position: relative;
-  width: 100%;  
+  width: 100%;
 
   .myslider {
     height: 655px;
     display: none;
-    overflow: hidden;
+    overflow: hidden; 
+  }
+
+  .next {
+    right: 0;
   }
 
   .prev, .next {
@@ -183,17 +186,13 @@ nav {
     font-size: 50px;
     padding: 15px;
     cursor: pointer;
-    color: #fff;
+    color: $text-color;
     transition: .1s;
     user-select: none;
   }
 
   .prev:hover, .next:hover {
-    color: $text-color;
-  }
-
-  .next {
-    right: 0;
+    color: $gerainaeema;
   }
 
   .dotsbox {
@@ -227,5 +226,14 @@ nav {
     .myslider {
       height: 500px;
     }
+  }
+}
+
+// Products
+#products {
+  background-color: #F2F2F2;
+
+  .btn {
+    background-color: $gerainaeema;
   }
 }

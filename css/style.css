@@ -10,7 +10,6 @@ html {
 
 body {
   height: 2000px;
-  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
@@ -140,6 +139,9 @@ nav .menu-toggle input:checked ~ span:nth-child(4) {
   display: none;
   overflow: hidden;
 }
+.slider .next {
+  right: 0;
+}
 .slider .prev, .slider .next {
   position: absolute;
   top: 50%;
@@ -147,7 +149,7 @@ nav .menu-toggle input:checked ~ span:nth-child(4) {
   font-size: 50px;
   padding: 15px;
   cursor: pointer;
-  color: #fff;
+  color: rgb(15, 23, 42);
   transition: 0.1s;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -155,10 +157,7 @@ nav .menu-toggle input:checked ~ span:nth-child(4) {
           user-select: none;
 }
 .slider .prev:hover, .slider .next:hover {
-  color: rgb(15, 23, 42);
-}
-.slider .next {
-  right: 0;
+  color: #d1c286;
 }
 .slider .dotsbox {
   position: absolute;
@@ -187,4 +186,11 @@ nav .menu-toggle input:checked ~ span:nth-child(4) {
   .slider .myslider {
     height: 500px;
   }
+}
+
+#products {
+  background-color: #F2F2F2;
+}
+#products .btn {
+  background-color: #d1c286;
 }/*# sourceMappingURL=style.css.map */

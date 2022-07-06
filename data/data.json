@@ -1,0 +1,130 @@
+{
+    "products": [
+        {
+            "kategori": "set",
+            "nama": "Haura Series Set",
+            "deskripsi": "Set Syar'i anggun yang modis dengan design layer yang elegan banget, yang selalu bikin ukhmin kebanjiran testimony dari temen2 yang MasyaAllah positif banget, bikin ukhmin selalu semangat.",
+            "harga": "Rp350.000",
+            "gambar": "haura.jpeg"
+        },
+        {
+            "kategori": "set",
+            "nama": "KHadijah Series Set",
+            "deskripsi": "",
+            "harga": "Rp245.000",
+            "gambar": "khadijah.jpeg"
+        },
+        {
+            "kategori": "set",
+            "nama": "Azalea Series Set",
+            "deskripsi": "Set Syar'i anggun yang modis dengan design layer yang elegan banget, yang selalu bikin ukhmin kebanjiran testimony dari temen2 yang MasyaAllah positif banget, bikin ukhmin selalu semangat.",
+            "harga": "Rp295.000",
+            "gambar": "azalea.jpeg"
+        },
+        {
+            "kategori": "set",
+            "nama": "Raisa Series Set",
+            "deskripsi": "",
+            "harga": "Rp325.000",
+            "gambar": "raisa.jpeg"
+        },
+        {
+            "kategori": "set",
+            "nama": "Syafa Series Set",
+            "deskripsi": "",
+            "harga": "Rp245.000",
+            "gambar": "syafa.jpeg"
+        },
+        {
+            "kategori": "set",
+            "nama": "Hayya Series Set",
+            "deskripsi": "Ied Series Set dengan design modis tetap mengusung kesan simple elegan, nyaman dikenakan seharian dalam berbagai aktifitas kamu. Bahan? Jangan ditanya, sudah pasti kami pilihkan premium quality, jahitan rapi kualitas butik dengan aksen remple yang cantik hadir dalam beberapa warna anggun, dan sudah pasti kami siapkan pasmina dengan ukuran syar'i yang bisa dipakai dengan berbagai model hijab daaaaaan FREE CADAR",
+            "harga": "Rp300.000",
+            "gambar": "hayya.jpeg"
+        },
+        {
+            "kategori": "set",
+            "nama": "Ameera Series Set",
+            "deskripsi": "Dress dengan cuting umbrella, dilengkapi dengan kantong saku disebelah kanan. Juga dipermanis dengan tali terpisah di bagian pinggang yang bisa dilepas yang dilengkapi dengan slot untuk tali agar tetap rapi saat dipakai, untuk mengatur ukuran pinggang dan dijadikan pita yang semakin mempermanis dress ini. ",
+            "harga": "Rp245.000",
+            "gambar": "ameera.jpeg"
+        },
+        {
+            "kategori": "dress muslim",
+            "nama": "Shahia Series",
+            "deskripsi": "Shahia dress hadir dengan design simple elegan, cocok dipakai buat semua usia, cocok dipakai untuk acara apapun, kali ini hadir dalam 2 warna brown series,,,special buat kamu pecinta brown yang sudah pasti bakal akan selalu anggun buat kamu pakai kemanapun dong. Dress ini super duper ringan, super duper adem saat dipakai, simple tapi anggun, cocok banget buat kamu-kamu yang ga suka keribetan hihihi",
+            "harga": "Rp345.000",
+            "gambar": "shahia.jpeg"
+        },
+        {
+            "kategori": "dress muslim",
+            "nama": "Rania Series",
+            "deskripsi": "",
+            "harga": "Rp325.000",
+            "gambar": "rania.jpeg"
+        },
+        {
+            "kategori": "dress muslim",
+            "nama": "Ameera Series-Dress Only",
+            "deskripsi": "",
+            "harga": "Rp100.000",
+            "gambar": "ameera-dressonly.jpeg"
+        },
+        {
+            "kategori": "hijab",
+            "nama": "Cadar Haura",
+            "deskripsi": "Cadar Tali",
+            "harga": "Rp15.000",
+            "gambar": "cadar-haura.jpeg"
+        },
+        {
+            "kategori": "hijab",
+            "nama": "Pasmina Haura",
+            "deskripsi": "",
+            "harga": "Rp15.000",
+            "gambar": "pasmina-haura.jpeg"
+        },
+        {
+            "kategori": "hijab",
+            "nama": "Khimar Arafah",
+            "deskripsi": "",
+            "harga": "Rp50.000",
+            "gambar": "khimar-arafah.jpeg"
+        },
+        {
+            "kategori": "pakaian muslim anak",
+            "nama": "Mukena Bordir Aasiyah",
+            "deskripsi": "Mukena ini adalah mukena yang lagi trend saat ini. Dengan bahan Katun Mikro yang halus , adem, jatuh dan tidak menerawang serta warna yang lembut membuat mukena ini nyaman untuk dipakai ibadah Sholat.",
+            "harga": "Rp150.000",
+            "gambar": "mukena-bordir-aasiyah.jpeg"
+        },
+        {
+            "kategori": "pakaian muslim anak",
+            "nama": "Khimar Khadijah",
+            "deskripsi": "",
+            "harga": "Rp50.000",
+            "gambar": "khimar-khadijah.jpeg"
+        },
+        {
+            "kategori": "mukena dan perlengkapan sholat",
+            "nama": "Rumaysha Pray Set",
+            "deskripsi": "Koleksi mukena cantik dari @gerainaeema yang siap menemani ibadah ukhties dengan nyaman",
+            "harga": "Rp450.000",
+            "gambar": "rumaysha-pray-set.jpeg"
+        },
+        {
+            "kategori": "mukena dan perlengkapan sholat",
+            "nama": "Mukena Border Fatimah",
+            "deskripsi": "Mukena ini adalah mukena yang lagi trend saat ini. Dengan bahan Katun Mikro yang halus , adem, jatuh dan tidak menerawang serta warna yang lembut membuat mukena ini nyaman untuk dipakai ibadah Sholat.",
+            "harga": "Rp210.000",
+            "gambar": "mukena-border-fatimah.jpeg"
+        },
+        {
+            "kategori": "fashion muslim lainnya",
+            "nama": "Digital Tasbih",
+            "deskripsi": "",
+            "harga": "Rp15.000",
+            "gambar": "digital-tasbih.jpeg"
+        }
+    ]
+}

@@ -1,3 +1,9 @@
+<?php
+  $data = file_get_contents('data/data.json');
+  $products = json_decode($data, true);
+
+  $products = $products["products"];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,10 +47,9 @@
     <meta name="msapplication-square310x310logo" content="ico/mstile-310x310.png" />
   </head>
   <body>
-
     <div id="backdrop"></div>
 
-    <!-- Navbar Start -->
+    <!-- Navbar-->
     <nav class="d-flex justify-content-between align-items-center">
       <div class="logo px-3">
         <img src="img/gerainaeema.png" alt="Gerainaeema">
@@ -80,30 +85,78 @@
         <span></span>
       </div>
     </nav>
-    <!-- Navbar End -->
+    <!-- Akhir Navbar -->
 
-    <!-- Home Section Start -->
+    <!-- Home Section -->
     <div class="slider" id="home">
-      <div class="myslider" style="display: block;">
-        <img src="img/WhatsApp Image 2022-07-01 at 13.38.22 (1).jpeg" alt="" class="w-100 h-100">
+      <div class="container">
+        <div class="myslider" style="display: block;">
+          <img src="img/WhatsApp Image 2022-07-01 at 13.38.22 (1).jpeg" alt="" class="w-100 h-100">
+        </div>
+        <div class="myslider">
+          <img src="img/WhatsApp Image 2022-07-01 at 13.38.23 (1).jpeg" alt="" class="w-100 h-100">
+        </div>
+        <div class="myslider">
+          <img src="img/WhatsApp Image 2022-07-01 at 13.38.23 (2).jpeg" alt="" class="w-100 h-100">
+        </div>       
       </div>
-      <div class="myslider">
-        <img src="img/WhatsApp Image 2022-07-01 at 13.38.23 (1).jpeg" alt="" class="w-100 h-100">
-      </div>
-      <div class="myslider">
-        <img src="img/WhatsApp Image 2022-07-01 at 13.38.23 (2).jpeg" alt="" class="w-100 h-100">
-      </div>
-
       <a class="prev text-decoration-none" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next text-decoration-none" onclick="plusSlides(1)">&#10095;</a>
-
+      
       <div class="dotsbox text-center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
-    <!-- Home Section End -->
+    <!-- Akhir Home Section -->
+
+    <!-- Products Section -->
+    <section id="products">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h4 class="mt-5">Popular Products</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/haura.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Haura Series Set</h5>
+                <h5 class="card-title">Rp350.000</h5>
+                <a href="#" class="btn border-0 text-white">Add To Cart</a>
+                <a href="#" class="btn border-0 text-white">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/ameera.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Ameera Series Set</h5>
+                <h5 class="card-title">Rp190.000</h5>
+                <a href="#" class="btn border-0 text-white">Add To Cart</a>
+                <a href="#" class="btn border-0 text-white">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/cadar-haura.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Cadar Haura</h5>
+                <h5 class="card-title">Rp15.000</h5>
+                <a href="#" class="btn border-0 text-white">Add To Cart</a>
+                <a href="#" class="btn border-0 text-white">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Products Section -->
 
     <!-- JS -->
     <script src="js/script.js"></script>
