@@ -1,9 +1,3 @@
-<?php
-  $data = file_get_contents('data/data.json');
-  $products = json_decode($data, true);
-
-  $products = $products["products"];
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +7,7 @@
     <title>Gerainaeema | Exclusive Syar'i</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -56,9 +50,10 @@
       </div>
       <ul class="list-unstyled px-lg-3 my-auto">
         <li>
-          <a href="#home">Home</a>
+          <a href="index.php">Home</a>
         <li>
-          <a href="#">Products</a>
+        <li>
+          <a href="products.php">Products</a>
         </li>
         <li>
           <a href="#">Other</a>
@@ -91,13 +86,13 @@
     <div class="slider" id="home">
       <div class="container">
         <div class="myslider" style="display: block;">
-          <img src="img/WhatsApp Image 2022-07-01 at 13.38.22 (1).jpeg" alt="" class="w-100 h-100">
+          <img src="img/haura.jpeg" alt="" class="w-100 h-100">
         </div>
         <div class="myslider">
-          <img src="img/WhatsApp Image 2022-07-01 at 13.38.23 (1).jpeg" alt="" class="w-100 h-100">
+          <img src="img/ameera.jpeg" alt="" class="w-100 h-100">
         </div>
         <div class="myslider">
-          <img src="img/WhatsApp Image 2022-07-01 at 13.38.23 (2).jpeg" alt="" class="w-100 h-100">
+          <img src="img/cadar-haura.jpeg" alt="" class="w-100 h-100">
         </div>       
       </div>
       <a class="prev text-decoration-none" onclick="plusSlides(-1)">&#10094;</a>
@@ -116,11 +111,11 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h4 class="mt-5">Popular Products</h2>
+            <h4 class="mt-5 mb-5">Popular Products</h4>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4" style="margin-bottom: 60px;">
             <div class="card">
               <img src="img/haura.jpeg" class="card-img-top">
               <div class="card-body">
@@ -131,7 +126,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4" style="margin-bottom: 60px;">
             <div class="card">
               <img src="img/ameera.jpeg" class="card-img-top">
               <div class="card-body">
@@ -142,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4" style="margin-bottom: 60px;">
             <div class="card">
               <img src="img/cadar-haura.jpeg" class="card-img-top">
               <div class="card-body">
@@ -158,12 +153,29 @@
     </section>
     <!-- Akhir Products Section -->
 
+    <!-- Testimony -->
+    <section id="testimony">
+      <div class="container">
+        <h6 class="text-center pt-5 fw-light">Testimony</h6>
+        <h4 class="text-center fw-bold mb-5">Happy Clients</h4>
+        <div class="testimony text-center">
+          <img src="https://cf.shopee.co.id/file/82b03085c9d4981b59ba83ec0debc697_tn" class="d-block mx-auto">
+          <h6>i*****i, Via <a href="https://shopee.co.id/READY-HAURA-SERIES-SET-i.38109918.6340931988?sp_atk=137f1c94-9272-401b-86ef-f0f236afea44&xptdk=137f1c94-9272-401b-86ef-f0f236afea44" class="text-decoration-none" style="color: #d1c286;">Shopee</a></h6>
+          <p>Alhamdulillah paketnya sdh nyampe, cmn 3 hari aja nyampe Sulawesi, gamisnyaa lucu :") <br> Kakak adminnya jg baik sekali responnya🥰🥺 Syukron katsiron yaa🙏😊</p>
+        </div>
+      </div>     
+    </section>
+    <!-- Akhir Testimony -->
+
     <!-- JS -->
     <script src="js/script.js"></script>
+    
+    <!-- PopperJs -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
 
     <!-- Bootstrap JS -->
-    <script src="js/bootstrap.bundle.js"></script>
-
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
